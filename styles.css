@@ -7,6 +7,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body  {
     max-width: 100vh;
     overflow-x: hidden;
@@ -23,6 +27,14 @@ img {
 
 p {
     line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .nav__container {
@@ -116,7 +128,7 @@ button {
 }
 
 button:active {
-    transform: translatey(1px);
+    transform: translate(1px);
 }
 
 .btn {
@@ -146,6 +158,15 @@ padding: 56px 0;
     margin: 0 auto;
 }
 
+.row__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+ .no-cursor {
+    cursor: not not-allowed;
+ }
 
 /* highlights */
 
@@ -274,3 +295,36 @@ padding: 56px 0;
         padding-right: 6px;
         color: #bfbfbf;
       }
+
+      /* explore */
+
+#explore {
+    background-color: rgba(115, 66, 214, 0.1);
+}
+
+      /* footer */
+
+      footer {
+        background-color: #242424;
+      }
+      
+      .footer__logo {
+        display: flex;
+      }
+      
+      .footer__logo--img {
+        width: 160px;
+        filter: grayscale(1) invert(1);
+      }
+     .footer__link,
+     .footer__copyright {
+       color: #fff;
+     }
+
+     .footer__list {
+        margin: 2opx 0 24px 0;
+     }
+
+     .footer__link {
+        padding: 0 8px;
+}
